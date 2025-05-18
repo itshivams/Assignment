@@ -1,4 +1,4 @@
 <?php
-require_once 'functions.php';
-// This script should send XKCD updates to all registered emails.
-// You need to implement this functionality.
+require_once __DIR__ . '/functions.php';
+// This script is meant to be run by your CRON job every 24h:
+sendXKCDUpdatesToSubscribers();
